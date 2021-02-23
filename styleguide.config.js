@@ -9,6 +9,16 @@ module.exports = {
   //     components: 'src/components/**/[A-Z]*.vue'
   //   }
   // ],
+  sections: [
+    {
+      name: 'Form component',
+      components: 'src/components/form/*.vue'
+    },
+    {
+      name: 'Other',
+      components: 'src/components/*.vue'
+    }
+  ],
   // webpackConfig: {
   //   // custom config goes here
   // },
