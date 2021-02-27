@@ -33,8 +33,14 @@ export default Vue.extend({
     }
   }),
   methods: {
-    sendForm () {
-      this.$sendRequest()
+    async sendForm () {
+      console.log(await this.$sendRequest({
+        network: 'vk',
+        method: 'login',
+        params: {
+          test: '123'
+        }
+      }))
     }
   }
 })
