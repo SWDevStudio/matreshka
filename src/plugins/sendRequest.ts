@@ -13,7 +13,7 @@ declare module 'vue/types/vue' {
   }
 }
 
-async function $sendRequest (config: SendRequest): Promise<object | null> {
+export async function $sendRequest (config: SendRequest): Promise<object | null> {
   const searchKey = isNaN(config.network as number) ? 'name' : 'id'
 
   const needNetwork: NetworkConstructor | undefined =
