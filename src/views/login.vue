@@ -24,6 +24,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import NetBridge from '@/plugins/NetBridge/NetBridge'
 export default Vue.extend({
   name: 'login',
   data: () => ({
@@ -34,13 +35,7 @@ export default Vue.extend({
   }),
   methods: {
     async sendForm () {
-      console.log(await this.$sendRequest({
-        network: 'vk',
-        method: 'login',
-        params: {
-          test: '123'
-        }
-      }))
+      console.log(NetBridge(1).networkData)
     }
   }
 })
