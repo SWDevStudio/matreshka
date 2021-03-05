@@ -1,6 +1,7 @@
 import SendRequest from '@/plugins/NetBridge/interface/SendRequest'
 
-export default class Network {
+export default abstract class Network {
+
   public async login (name: number | string): Promise<string | null> {
     return new Promise((resolve, reject) => {
       name ? resolve('userToken') : reject(Error('give network or name id'))
