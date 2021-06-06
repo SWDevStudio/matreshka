@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <button @click="click">Кликни на меня</button>
+    <img src="/img/main-preview.png" alt="">
   </div>
 </template>
 
@@ -26,3 +25,12 @@ export default Vue.extend({
   }
 })
 </script>
+<style lang="stylus">
+.home {
+  img {
+    display block
+    max-width 100vw
+    max-height 100vh
+  }
+}
+</style>
